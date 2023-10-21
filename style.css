@@ -1,0 +1,53 @@
+* {
+    background: black;
+    color: darkorange;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    /*text-align: right;*/
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #ff8c00;
+    flex-direction: row;
+    height: 50px;
+}
+
+.navbar-item {
+    /*height: 50px;*/
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    /*border: white dotted;*/
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    background-color: darkorange;
+    color: black;
+}
+
+.navbar-item-link {
+    text-decoration: none;
+}
+
+.current-page {
+    background-color: darkorange;
+    color: black;
+}
+
+.current-page a {
+    color: black;
+    background-color: darkorange;
+}
+
