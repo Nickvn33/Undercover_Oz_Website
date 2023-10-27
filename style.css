@@ -1,7 +1,8 @@
 * {
     background: black;
-    color: darkorange;
+    color: #F0AC31;
     text-align: center;
+    font-family: Tahoma, sans-serif;
 }
 
 h1 {
@@ -38,27 +39,27 @@ h1 {
 }
 
 .facebook {
-    background-image: url("FB_Orange_on_Black.png");
+    background-image: url("FB_Gold_on_Black.png");
 }
 
 .facebook:hover {
-    background-image: url("FB_Black_on_Orange.png");
+    background-image: url("FB_Black_on_Gold.png");
 }
 
 .instagram {
-    background-image: url("Insta_Orange_on_Black.png");
+    background-image: url("Insta_Gold_on_Black.png");
 }
 
 .instagram:hover {
-    background-image: url("Insta_Black_on_Orange.png");
+    background-image: url("Insta_Black_on_Gold.png");
 }
 
 .youtube {
-    background-image: url("YT_Orange_on_Black.png");
+    background-image: url("YT_Gold_on_Black.png");
 }
 
 .youtube:hover {
-    background-image: url("YT_Black_on_Orange.png");
+    background-image: url("YT_Black_on_Gold.png");
 }
 
 .navbar {
@@ -103,10 +104,12 @@ h1 {
                 color 0.25s ease;
     /*cursor: pointer;*/
     border: none;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .navbar-item:hover {
-    background-color: darkorange;
+    background-color: #F0AC31;
     color: black;
 }
 
@@ -115,18 +118,18 @@ h1 {
 }
 
 .current-page {
-    background-color: darkorange;
+    background-color: #F0AC31;
     color: black;
 }
 
 .current-page a {
     color: black;
-    background-color: darkorange;
+    background-color: #F0AC31;
 }
 
 .slideshow {
     width: 750px;
-    height: 500px;
+    height: 250px;
     display: none;
     animation-name: fade;
     animation-duration: 1.5s;
