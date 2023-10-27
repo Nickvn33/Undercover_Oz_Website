@@ -20,7 +20,43 @@
         <div class="content">
             <div class="heading"><h1>UnderCoverOz - Melbourne Cover Band</h1></div>
             <div class="under-construction"><h2>Under Construction</h2></div>
+            <div class="main-content">
+                <div class="slideshow">
+                    <img src="5aa1696c-42c3-4bd4-a90b-67aeea6c835f.jpg" style="width:100%">
+                </div>
+                <div class="slideshow">
+                    <img src="63965d18-5b80-4473-810e-cf21ed39d7f7.jpg" style="width:100%">
+                </div>
+                <div class="slideshow">
+                    <img src="df5daa33-c1a5-4977-bba6-0e94d750d5c7.jpg" style="width:100%">
+                </div>
+                <div class="slideshow">
+                    <img src="e2b11290-4171-44f9-98d0-552857800506.jpg" style="width:100%">
+                </div>
+            </div>
         </div>
     </div>
+    <div class="footer">
+        <a href="https://www.facebook.com/Undercoveroz" target="_blank"><div class="social facebook"></div></a>
+        <div class="social instagram"></div>
+        <div class="social youtube"></div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slideshow");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "grid";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
 </body>
 </html>

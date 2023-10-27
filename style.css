@@ -13,14 +13,83 @@ h1 {
     flex-direction: column;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 75px;
+    background-color: transparent;
+}
+
+.social {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    /*border: solid darkorange .5px;*/
+    /*border-radius: 5px;*/
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+    cursor: pointer;
+}
+
+.facebook {
+    background-image: url("FB_Orange_on_Black.png");
+}
+
+.facebook:hover {
+    background-image: url("FB_Black_on_Orange.png");
+}
+
+.instagram {
+    background-image: url("Insta_Orange_on_Black.png");
+}
+
+.instagram:hover {
+    background-image: url("Insta_Black_on_Orange.png");
+}
+
+.youtube {
+    background-image: url("YT_Orange_on_Black.png");
+}
+
+.youtube:hover {
+    background-image: url("YT_Black_on_Orange.png");
+}
+
 .navbar {
     display: flex;
     /*text-align: right;*/
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid #ff8c00;
+    /*border: 1px solid #ff8c00;*/
     flex-direction: row;
     height: 50px;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+            "heading"
+            "temp"
+            "main-content";
+    justify-items: center;
+}
+
+.heading {
+    grid-area: heading;
+}
+
+.under-construction {
+    grid-area: temp;
+}
+
+.main-content {
+    grid-area: main-content;
 }
 
 .navbar-item {
@@ -29,7 +98,11 @@ h1 {
     width: 100px;
     text-align: center;
     /*border: white dotted;*/
-    text-decoration: none;
+    /*text-decoration: none;*/
+    transition: background-color 0.25s ease,
+                color 0.25s ease;
+    /*cursor: pointer;*/
+    border: none;
 }
 
 .navbar-item:hover {
@@ -51,3 +124,19 @@ h1 {
     background-color: darkorange;
 }
 
+.slideshow {
+    width: 750px;
+    height: 500px;
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
