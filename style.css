@@ -79,14 +79,17 @@ h1 {
             "temp"
             "main-content";
     justify-items: center;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 .heading {
     grid-area: heading;
 }
 
-.under-construction {
+.buffer {
     grid-area: temp;
+    height: 50px;
 }
 
 .main-content {
@@ -96,6 +99,7 @@ h1 {
 .navbar-item {
     /*height: 50px;*/
     padding: 15px;
+    margin: 0 5px;
     width: 100px;
     text-align: center;
     /*border: white dotted;*/
@@ -128,11 +132,67 @@ h1 {
 }
 
 .slideshow {
-    width: 750px;
+    width: 500px;
     height: 250px;
     display: none;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+#content-bio {
+    width: 750px;
+}
+
+.packages {
+    /*border: aliceblue solid;*/
+    width: 750px;
+    text-align: center;
+    align-content: center;
+}
+
+.package {
+    /*border: aliceblue solid;*/
+    display: grid;
+    grid-template-areas:
+            "heading details";
+    height: 150px;
+}
+
+.package-heading {
+    border: #F0AC31 solid;
+    grid-area: heading;
+    width: 375px;
+    padding: 25px 0;
+}
+
+.package-details {
+    border-top: #F0AC31 solid;
+    border-right: #F0AC31 solid;
+    border-bottom: #F0AC31 solid;
+    grid-area: details;
+    width: 375px;
+    padding: 40px 5px;
+}
+
+.packages-footer {
+    padding: 40px 25px;
+}
+
+.songlist {
+    /*padding: 25px 0;*/
+    margin-top: 25px;
+    overflow-y: auto;
+    height: 600px;
+}
+
+.songlist thead th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+#black {
+    color: black;
 }
 
 @keyframes fade {

@@ -9,18 +9,18 @@
 <body>
     <div class="main">
         <div class="navbar">
-<!--            <div class="navbar-item current-page"><a class="navbar-item-link current-page">Home</a></div>-->
             <button class="navbar-item current-page">Home</button>
-<!--            <div class="navbar-item" href="Bio.html"><a href="Bio.html" class="navbar-item-link">Bio</a></div>-->
             <button class="navbar-item" onclick='window.location.href = "Bio.html"'>Bio</button>
-<!--            <div class="navbar-item"><a href="Media.html" class="navbar-item-link">Media</a></div>-->
+            <button class="navbar-item" onclick='window.location.href = "Songlist.html"'>Song List</button>
             <button class="navbar-item" onclick='window.location.href = "Media.html"'>Media</button>
-<!--            <div class="navbar-item"><a href="Contact.html" class="navbar-item-link">Contact</a></div>-->
-            <button class="navbar-item" onclick='window.location.href = "Contact.html"'>Contact</button>
+            <button class="navbar-item" onclick='window.location.href = "Book_Us.html"'>Book Us</button>
         </div>
         <div class="content">
-            <div class="heading"><h1>UnderCoverOz - Melbourne Cover Band</h1></div>
-            <div class="under-construction"><h2>Under Construction</h2></div>
+            <div class="heading">
+                <h1>UnderCoverOz</h1>
+                <h2>Melbourne Cover Band</h2>
+            </div>
+            <div class="buffer"></div>
             <div class="main-content">
                 <div class="slideshow">
                     <img src="292385111_469638761832973_4631551124073937280_n.jpg" style="width:100%">
@@ -45,22 +45,6 @@
         <div class="social instagram"></div>
         <a href="https://www.youtube.com/@UndercoverOZ-au/featured" target="_blank"><div class="social youtube"></div></a>
     </div>
-
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("slideshow");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "grid";
-            setTimeout(showSlides, 5000); // Change image every 5 seconds
-        }
-    </script>
+    <script src="slideshow.js"></script>
 </body>
 </html>
