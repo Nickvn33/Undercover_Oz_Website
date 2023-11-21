@@ -20,7 +20,7 @@
 
 html {
     background: black;
-    overflow: hidden;
+    /*overflow: visible;*/
 }
 
 .wrap {
@@ -53,6 +53,7 @@ h1 {
     display: flex;
     flex-direction: column;
     position: relative;
+    max-width: 100%;
 }
 
 .footer {
@@ -65,7 +66,8 @@ h1 {
     flex-direction: row;
     width: 100%;
     height: 75px;
-    background-color: transparent;
+    background-color: black;
+    z-index: 10;
 }
 
 .social {
@@ -104,13 +106,15 @@ h1 {
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
     /*text-align: right;*/
     justify-content: flex-end;
     align-items: center;
     /*border: 1px solid #ff8c00;*/
     flex-direction: row;
-    height: 50px;
+    height: 75px;
 }
 
 .content {
@@ -142,6 +146,7 @@ h1 {
     padding: 15px;
     margin: 0 5px;
     width: 100px;
+    height: 65px;
     text-align: center;
     /*border: white dotted;*/
     /*text-decoration: none;*/
@@ -182,12 +187,14 @@ h1 {
 }
 
 #content-bio {
-    width: 750px;
+    width: 90vw;
+    max-width: 750px;
 }
 
 .packages {
     /*border: aliceblue solid;*/
-    width: 750px;
+    width: 90vw;
+    max-width: 750px;
     text-align: center;
     align-content: center;
 }
@@ -224,6 +231,7 @@ h1 {
     margin-top: 25px;
     overflow-y: scroll;
     height: 600px;
+    max-height: 80%;
 }
 
 .songlist thead th {
