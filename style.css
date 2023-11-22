@@ -189,7 +189,7 @@ h1 {
 
 .slideshow {
     width: 500px;
-    max-width: 100vw;
+    max-width: 90vw;
     height: 250px;
     display: none;
     animation-name: fade;
