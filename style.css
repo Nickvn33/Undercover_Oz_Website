@@ -24,7 +24,7 @@ html {
 }
 
 .wrap {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     position: relative;
     height: 100vh;
     max-height: 100vh;
@@ -193,9 +193,13 @@ h1 {
     animation-duration: 1.5s;
 }
 
-#content-bio {
+.content-bio {
     width: 90vw;
     max-width: 750px;
+    overflow-y: auto;
+    /*position: sticky;*/
+    height: 800px;
+    max-height: 75%;
 }
 
 .packages {
