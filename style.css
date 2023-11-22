@@ -210,8 +210,8 @@ h1 {
     animation-duration: 1.5s;
 }
 
-#bio {
-    max-height: 150vw;
+.bio {
+    max-height: 100vw;
 }
 
 .content-bio {
@@ -220,7 +220,7 @@ h1 {
     overflow-y: auto;
     /*position: sticky;*/
     height: 800px;
-    max-height: 75%;
+    max-height: 100vw;
 }
 
 .packages {
