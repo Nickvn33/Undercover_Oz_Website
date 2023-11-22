@@ -166,11 +166,13 @@ h1 {
     background: transparent;
 }
 
-.navbar-item:hover {
-    background-color: #F0AC31;
-    color: black;
+@media (hover: hover) and (pointer: fine) {
+    .navbar-item:hover {
+        background-color: #F0AC31;
+        color: black;
 }
 
+}
 .navbar-item-link {
     text-decoration: none;
 }
