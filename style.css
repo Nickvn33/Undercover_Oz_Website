@@ -210,6 +210,10 @@ h1 {
     animation-duration: 1.5s;
 }
 
+#bio {
+    max-height: 80%;
+}
+
 .content-bio {
     width: 90vw;
     max-width: 750px;
