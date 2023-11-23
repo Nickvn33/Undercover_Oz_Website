@@ -32,4 +32,7 @@ function selector() {
             document.getElementById('corporate').style.display = 'block';
             break;
     }
+
+    e.preventDefault();
 }
+
