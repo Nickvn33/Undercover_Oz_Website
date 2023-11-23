@@ -23,6 +23,10 @@ html {
     overflow: hidden;
 }
 
+select {
+    background-color: black;
+}
+
 .wrap {
     /*overflow-x: hidden;*/
     position: relative;
@@ -233,25 +237,25 @@ h1 {
 
 .package {
     /*border: aliceblue solid;*/
-    display: grid;
-    grid-template-areas:
-            "heading details";
+    display: none;
+    /*grid-template-areas:*/
+    /*        "heading details";*/
     height: 150px;
 }
 
 .package-heading {
-    border: #F0AC31 solid;
-    grid-area: heading;
-    width: 375px;
+    /*border: #F0AC31 solid;*/
+    /*grid-area: heading;*/
+    /*width: 375px;*/
     padding: 25px 0;
 }
 
 .package-details {
-    border-top: #F0AC31 solid;
-    border-right: #F0AC31 solid;
-    border-bottom: #F0AC31 solid;
-    grid-area: details;
-    width: 375px;
+    /*border-top: #F0AC31 solid;*/
+    /*border-right: #F0AC31 solid;*/
+    /*border-bottom: #F0AC31 solid;*/
+    /*grid-area: details;*/
+    /*width: 375px;*/
     padding: 35px 5px;
 }
 
@@ -297,4 +301,8 @@ h1 {
     to {
         opacity: 1;
     }
+}
+
+#default {
+    display: block;
 }

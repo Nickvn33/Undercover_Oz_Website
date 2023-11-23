@@ -33,8 +33,26 @@
             <div class="content">
                 <div class="heading"><h1>Book Us</h1></div>
                 <div class="buffer"></div>
+                <div class="contact">
+                    
+                </div>
+                <div class="selector">
+                    <label for="package-selector">Package:</label>
+                    <select id="package-selector" onchange="selector()">
+                        <option selected>- Select -</option>
+                        <option value="basic">Basic</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="corporate">Corporate</option>
+                    </select>
+                </div>
                 <div class="packages">
-                    <div class="package">
+                    <div class="package" id="default">
+                        <div class="package-heading">
+                            <h3>Please Select a Package for details</h3>
+                        </div>
+                    </div>
+                    <div class="package" id="basic">
                         <div class="package-heading">
                             <h3>Basic</h3>
                             <p>from $3,000</p>
@@ -43,7 +61,7 @@
                             list, PA and lighting hire, within 1 hour driving distance of Melbourne CBD (approx 50km
                             radius)</div>
                     </div>
-                    <div class="package">
+                    <div class="package" id="deluxe">
                         <div class="package-heading">
                             <h3>Deluxe</h3>
                             <p>from $4,000</p>
@@ -52,7 +70,7 @@
                             list, PA and lighting hire, within 1 hour driving distance of Melbourne CBD (approx 50km
                             radius)</div>
                     </div>
-                    <div class="package">
+                    <div class="package" id="wedding">
                         <div class="package-heading">
                             <h3>Wedding</h3>
                             <p>from $4,000</p>
@@ -61,7 +79,7 @@
                             list, PA and lighting hire, within 1 hour driving distance of Melbourne CBD (approx 50km
                             radius)</div>
                     </div>
-                    <div class="package">
+                    <div class="package" id="corporate">
                         <div class="package-heading">
                             <h3>Corporate</h3>
                             <p>from $5,000</p>
@@ -70,16 +88,15 @@
                             list, PA and lighting hire, within 1 hour driving distance of Melbourne CBD (approx 50km
                             radius)</div>
                     </div>
-                    <div class="packages-footer">Prices subject to change, including significant increase if outside of
-                    stated 50km radius of Melbourne CBD.</div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <a href="https://www.facebook.com/Undercoveroz" target="_blank"><div class="social facebook"></div></a>
-            <a href="https://www.instagram.com/undercoveroz/" target="_blank"><div class="social instagram"></div></a>
-            <a href="https://www.youtube.com/@UndercoverOZ-au/featured" target="_blank"><div class="social youtube"></div></a>
-        </div>
     </div>
+    <div class="footer">
+        <a href="https://www.facebook.com/Undercoveroz" target="_blank"><div class="social facebook"></div></a>
+        <a href="https://www.instagram.com/undercoveroz/" target="_blank"><div class="social instagram"></div></a>
+        <a href="https://www.youtube.com/@UndercoverOZ-au/featured" target="_blank"><div class="social youtube"></div></a>
+    </div>
+    <script src="selector.js"></script>
 </body>
 </html>
