@@ -27,6 +27,10 @@ select {
     background-color: black;
 }
 
+.selector {
+    margin-top: 15px;
+}
+
 .wrap {
     /*overflow-x: hidden;*/
     position: relative;
@@ -247,7 +251,7 @@ h1 {
     /*border: #F0AC31 solid;*/
     /*grid-area: heading;*/
     /*width: 375px;*/
-    padding: 25px 0;
+    padding-top: 25px;
 }
 
 .package-details {
@@ -256,7 +260,7 @@ h1 {
     /*border-bottom: #F0AC31 solid;*/
     /*grid-area: details;*/
     /*width: 375px;*/
-    padding: 35px 5px;
+    padding: 25px 5px;
 }
 
 .packages-footer {
