@@ -306,3 +306,22 @@ h1 {
 #default {
     display: block;
 }
+
+.landscape-cover {
+    display: none;
+    color: black;
+    background-color: gray;
+    opacity: 95%;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    padding: 30vh 0;
+}
+
+@media only screen and (pointer: coarse) and (orientation: landscape) {
+    .landscape-cover {
+        display: block;
+    }
+}
