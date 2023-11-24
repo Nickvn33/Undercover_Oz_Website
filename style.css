@@ -313,11 +313,13 @@ h1 {
     background-color: gray;
     opacity: 95%;
     text-align: center;
-    width: 100vw;
-    height: 100vh;
+    width: 110vw;
+    height: 110vh;
     position: absolute;
     z-index: 100;
     padding: 30vh 0;
+    top: -5px;
+    left: -5px;
 }
 
 @media only screen and (pointer: coarse) and (orientation: landscape) {
