@@ -26,22 +26,22 @@
                 alt=""
         >
         <div class="main">
-            <div class="navbar">
+            <nav class="navbar">
                 <button class="navbar-item" onclick='window.location.href = "index.html"'>Home</button>
                 <button class="navbar-item" onclick='window.location.href = "Bio.html"'>Bio</button>
                 <button class="navbar-item" onclick='window.location.href = "Songlist.html"'>Song List</button>
                 <button class="navbar-item" onclick='window.location.href = "Media.html"'>Media</button>
                 <button class="navbar-item current-page">Book Us</button>
-            </div>
+            </nav>
             <div class="top-buffer"></div>
             <div class="content">
-                <div class="heading"><h1>Book Us</h1></div>
+                <header class="heading"><h1>Book Us</h1></header>
                 <div class="buffer"></div>
-                <div class="contact">
+                <section class="contact">
                     <p>Please direct all enquires to the following:</p>
                     <p>Mobile: <a href="tel:0429588587">0429 588 587</a></p>
                     <p>Email: <a href="mailto: undercoverozcoverband@gmail.com">undercoverozcoverband@gmail.com</a></p>
-                </div>
+                </section>
                 <div class="selector">
                     <label for="package-selector">Package:</label>
                     <select id="package-selector" onchange="selector()">
@@ -52,7 +52,7 @@
                         <option value="corporate">Corporate</option>
                     </select>
                 </div>
-                <div class="packages">
+                <article class="packages">
                     <div class="package" id="default">
                         <div class="package-heading">
                             <h3>Please Select a Package for details</h3>
@@ -107,20 +107,20 @@
                             <p>Pricing may vary due to additional travel time and accommodation</p>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </div>
-    <div class="footer">
+    <footer class="footer">
         <div class="logo-container">
-            <img src="IMG_3207_transparent_square.png" class="logo">
+            <img src="IMG_3207_transparent_square.png" class="logo" alt="UnderCoverOz">
         </div>
         <div class="socials">
             <a href="https://www.facebook.com/Undercoveroz" target="_blank"><div class="social facebook"></div></a>
             <a href="https://www.instagram.com/undercoveroz/" target="_blank"><div class="social instagram"></div></a>
             <a href="https://www.youtube.com/@UndercoverOZ-au/featured" target="_blank"><div class="social youtube"></div></a>
         </div>
-    </div>
+    </footer>
     <script src="selector.js"></script>
 </body>
 </html>
