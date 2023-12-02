@@ -1,7 +1,6 @@
 * {
     /*background: black;*/
     color: #F0AC31;
-    text-align: center;
     font-family: Tahoma, sans-serif;
 }
 
@@ -21,6 +20,7 @@
 html {
     background: black;
     overflow: hidden;
+    text-align: center;
 }
 
 select {
@@ -212,8 +212,12 @@ h1 {
     .navbar-item:hover {
         background-color: #F0AC31;
         color: black;
-}
+    }
 
+    .navbar-item-test:hover {
+        background-color: #F0AC31;
+        color: black;
+    }
 }
 .navbar-item-link {
     text-decoration: none;
@@ -334,7 +338,7 @@ h1 {
 .landscape-cover {
     display: none;
     color: black;
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
     opacity: 95%;
     text-align: center;
     width: 110vw;
@@ -350,4 +354,77 @@ h1 {
     .landscape-cover {
         display: block;
     }
+}
+
+.navbar-test {
+    text-align: justify;
+}
+
+.navbar-item-test {
+    background-color: black;
+    border: transparent;
+    border-bottom: #F0AC31 solid;
+    width: 100%;
+    height: 30px;
+}
+
+.access_aid {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 0;
+    padding-top: 40px;
+    overflow: hidden;
+    background: black 10px 10px / 20px 20px no-repeat;
+}
+
+#access_nav {
+    /*width: 10px;*/
+    /*height: 10px;*/
+    background-image: -webkit-repeating-linear-gradient(#F0AC31, #F0AC31 2px, #000 2px, #000 4px);
+    background-image: repeating-linear-gradient(#F0AC31, #F0AC31 2px, #000 2px, #000 4px);
+}
+
+#main_nav {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 200px;
+    height: 90vh;
+    /*text-align: left;*/
+    font-size: 30px;
+}
+
+#main_nav:target {
+    display: block;
+}
+
+.current-page-test {
+    background-color: #F0AC31;
+    color: black;
+}
+
+.current-page-test a {
+    color: black;
+    background-color: #F0AC31;
+}
+
+/*button {*/
+/*    text-align: justify;*/
+/*    font-size: 20px;*/
+/*    !*padding: 5px 0;*!*/
+/*}*/
+
+ul {
+    margin: 0;
+}
+
+#sampler-video {
+    height: 360px;
+    max-height: 90vh;
+    width: 640px;
+    max-width: 90vw;
 }
