@@ -427,4 +427,5 @@ ul {
     max-height: 90vh;
     width: 640px;
     max-width: 90vw;
+    border: none;
 }
