@@ -429,3 +429,13 @@ ul {
     max-width: 90vw;
     border: none;
 }
+
+#desktop-buffer {
+    height: 75px;
+}
+
+@media only screen and (pointer: coarse) {
+    #desktop-buffer {
+        display: none;
+    }
+}
