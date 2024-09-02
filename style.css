@@ -65,6 +65,10 @@ select {
     #desktop-image {
         display: none;
     }
+
+    .slideshow {
+        max-height: 35vh;
+    }
 }
 
 h1 {
@@ -438,4 +442,32 @@ ul {
     #desktop-buffer {
         display: none;
     }
+}
+
+.next-gig {
+    padding-top: 25px;
+    display: grid;
+    grid-template-areas:
+                "next-gig-heading"
+                "next-gig-container";
+    justify-content: center;
+}
+
+.next-gig-heading {
+    font-weight: bold;
+    padding-bottom: 10px;
+    grid-area: next-gig-heading;
+}
+
+.next-gig-container {
+    display: flex;
+    grid-area: next-gig-container;
+}
+
+.next-gig-date {
+    padding: 5px;
+}
+
+.next-gig-info {
+    padding: 5px 5px 5px 20px;
 }
