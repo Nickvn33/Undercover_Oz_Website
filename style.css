@@ -57,20 +57,6 @@ select {
     display: none;
 }
 
-@media only screen and (max-width: 1080px) {
-    #mobile-image {
-        display: block;
-    }
-
-    #desktop-image {
-        display: none;
-    }
-
-    .slideshow {
-        max-height: 35vh;
-    }
-}
-
 h1 {
     text-align: center;
 }
@@ -212,17 +198,6 @@ h1 {
     background: transparent;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .navbar-item:hover {
-        background-color: #F0AC31;
-        color: black;
-    }
-
-    .navbar-item-test:hover {
-        background-color: #F0AC31;
-        color: black;
-    }
-}
 .navbar-item-link {
     text-decoration: none;
 }
@@ -426,12 +401,13 @@ ul {
     margin: 0;
 }
 
-#sampler-video {
+.sampler-video {
     height: 360px;
     max-height: 90vh;
     width: 640px;
     max-width: 90vw;
     border: none;
+    padding: 10px
 }
 
 #desktop-buffer {
@@ -470,4 +446,39 @@ ul {
 
 .next-gig-info {
     padding: 5px 5px 5px 20px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .navbar-item:hover {
+        background-color: #F0AC31;
+        color: black;
+    }
+
+    .navbar-item-test:hover {
+        background-color: #F0AC31;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    #mobile-image {
+        display: block;
+    }
+
+    #desktop-image {
+        display: none;
+    }
+
+    .slideshow {
+        max-height: 35vh;
+    }
+
+    .sampler-video {
+        height: 300px;
+        max-height: 40vh;
+        width: 640px;
+        max-width: 90vw;
+        border: none;
+        padding: 10px
+    }
 }
